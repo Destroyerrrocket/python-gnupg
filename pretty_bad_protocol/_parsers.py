@@ -1667,6 +1667,8 @@ class Verify(object):
                     self.notations[self._last_notation_name] += value
                 else:
                     pass
+        elif key.startswith("DECRYPTION_COMPLIANCE_"):
+            pass
         else:
             raise ValueError("Unknown status message: %r %r" % (key, value))
 
